@@ -1,0 +1,638 @@
+[REASONING BLOCK - stripped before output]
+
+// Step 1: Inventory
+// This file DEFINES: A JSON asset file (not Dart code) containing help articles
+// for the in-app HelpScreen. Structure needed:
+// - Array of article objects with: id, anchor, title, category, content, sections
+// - Each section has: id, anchor, title, content
+// - Covers all major app features: Calculator, RPN, History, Constants, Favorites,
+//   Graphs, Symbolic Math, Equation Solver, Matrices, Units, Stats, Settings
+// - Deep-link anchors for HelpArticlesService.getArticleByAnchor()
+// - Search-friendly content for HelpArticlesService.search()
+//
+// Step 2: Connections
+// Used by: lib/services/help_articles_service.dart (load, search, getArticleByAnchor)
+// Used by: lib/features/help/screens/help_screen.dart (display tree-view)
+// Must be valid JSON - no comments, starts with [ or {
+// Anchors must be unique strings for deep-linking
+//
+// Step 3: Content
+// Cover all 8 main screens + features:
+// 1. Calculator (basic, advanced, RPN mode, complex numbers)
+// 2. Graphs (2D, 3D, integral area, limit visualization)
+// 3. Equation Solver (single variable, system of equations)
+// 4. Matrices (operations, decompositions, eigenvalues)
+// 5. Units (conversion, SI prefixes, search)
+// 6. Statistics (descriptive, distributions, hypothesis, regression)
+// 7. Settings (display format, precision, theme, haptic)
+// 8. History & Favorites
+//
+// Step 4: Size constraint (Rule 47)
+// Keep content strings SHORT (1-2 sentences) to avoid file truncation
+// Use concise descriptions, not multi-paragraph essays
+// Target under 400 lines total
+
+[
+  {
+    "id": 1,
+    "anchor": "getting-started",
+    "title": "Getting Started",
+    "category": "Overview",
+    "icon": "home",
+    "summary": "Introduction to Scientific Pro Calculator and its main features.",
+    "sections": [
+      {
+        "id": "gs-overview",
+        "anchor": "gs-overview",
+        "title": "App Overview",
+        "content": "Scientific Pro Calculator provides high-precision arithmetic (up to 100 significant digits), symbolic math, 2D/3D graphing, matrix operations, unit conversion, and statistical analysis. All features work completely offline."
+      },
+      {
+        "id": "gs-navigation",
+        "anchor": "gs-navigation",
+        "title": "Navigation",
+        "content": "Use the bottom navigation bar to switch between Calculator, Graphs, Equations, Matrices, Units, Stats, Settings, and Help. Tap any tab icon to navigate instantly."
+      },
+      {
+        "id": "gs-themes",
+        "anchor": "gs-themes",
+        "title": "Themes",
+        "content": "Choose between Light, Dark, or System theme in Settings. The dark theme uses a slate background with indigo accents; the light theme uses a white background with the same accent palette."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "anchor": "calculator",
+    "title": "Calculator",
+    "category": "Calculator",
+    "icon": "calculate",
+    "summary": "High-precision arithmetic in Infix and RPN modes.",
+    "sections": [
+      {
+        "id": "calc-basic",
+        "anchor": "calc-basic",
+        "title": "Basic Arithmetic",
+        "content": "Enter expressions using the keypad. Supported operations include addition (+), subtraction (-), multiplication (*), division (/), and parentheses for grouping. Press = to evaluate."
+      },
+      {
+        "id": "calc-precision",
+        "anchor": "calc-precision",
+        "title": "High-Precision Mode",
+        "content": "The calculator supports up to 100 significant digits using the Decimal package. Adjust the number of displayed decimal places in Settings under Display Format."
+      },
+      {
+        "id": "calc-functions",
+        "anchor": "calc-functions",
+        "title": "Scientific Functions",
+        "content": "Access trigonometric (sin, cos, tan, asin, acos, atan), hyperbolic (sinh, cosh, tanh), logarithmic (log, ln, log2), exponential (exp, pow), and root functions (sqrt, cbrt) from the function panel."
+      },
+      {
+        "id": "calc-angle-mode",
+        "anchor": "calc-angle-mode",
+        "title": "Angle Mode",
+        "content": "Switch between Degrees, Radians, and Gradians using the DEG/RAD/GRAD button or in Settings. The current angle mode is shown in the status bar above the expression."
+      },
+      {
+        "id": "calc-complex",
+        "anchor": "calc-complex",
+        "title": "Complex Numbers",
+        "content": "Enter complex numbers using the form a+bi. Results display in rectangular form by default; toggle to polar form (magnitude ∠ phase) using the display format button."
+      },
+      {
+        "id": "calc-undo-redo",
+        "anchor": "calc-undo-redo",
+        "title": "Undo and Redo",
+        "content": "Use the undo (↩) and redo (↪) buttons to step through expression history. The undo stack tracks every keystroke so you can revert accidental edits."
+      },
+      {
+        "id": "calc-copy",
+        "anchor": "calc-copy",
+        "title": "Copy Result",
+        "content": "Tap the copy button to open a format menu. Choose between Decimal, Scientific Notation, or Fraction format. The selected format is copied to the clipboard."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "anchor": "rpn-mode",
+    "title": "RPN Mode",
+    "category": "Calculator",
+    "icon": "layers",
+    "summary": "Reverse Polish Notation input for stack-based calculation.",
+    "sections": [
+      {
+        "id": "rpn-overview",
+        "anchor": "rpn-overview",
+        "title": "What is RPN?",
+        "content": "Reverse Polish Notation (RPN) is a postfix notation where operators follow operands. For example, to compute 3 + 4, enter 3, press Enter, enter 4, then press +."
+      },
+      {
+        "id": "rpn-enable",
+        "anchor": "rpn-enable",
+        "title": "Enabling RPN Mode",
+        "content": "Enable RPN mode from Settings > RPN Mode toggle, or from the mode button on the Calculator screen. The stack display appears above the input field when RPN is active."
+      },
+      {
+        "id": "rpn-stack-ops",
+        "anchor": "rpn-stack-ops",
+        "title": "Stack Operations",
+        "content": "Use ENTER to push the current value onto the stack. SWAP exchanges the top two stack elements. DROP removes the top element. CLR clears the entire stack."
+      },
+      {
+        "id": "rpn-example",
+        "anchor": "rpn-example",
+        "title": "RPN Example",
+        "content": "To compute (3 + 4) * 2: enter 3, press ENTER; enter 4, press +; enter 2, press *. The result 14 appears at the top of the stack."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "anchor": "history",
+    "title": "Calculation History",
+    "category": "Calculator",
+    "icon": "history",
+    "summary": "View, recall, and export past calculations.",
+    "sections": [
+      {
+        "id": "hist-view",
+        "anchor": "hist-view",
+        "title": "Viewing History",
+        "content": "Tap the history button (clock icon) on the Calculator screen to open the History screen. All past calculations are listed in reverse chronological order."
+      },
+      {
+        "id": "hist-recall",
+        "anchor": "hist-recall",
+        "title": "Recalling a Calculation",
+        "content": "Tap any history entry to recall it to the Calculator screen. The expression is inserted into the input field and the result preview updates immediately."
+      },
+      {
+        "id": "hist-search",
+        "anchor": "hist-search",
+        "title": "Searching History",
+        "content": "Use the search bar at the top of the History screen to filter entries by expression or result. The list updates in real time as you type."
+      },
+      {
+        "id": "hist-export",
+        "anchor": "hist-export",
+        "title": "Exporting History",
+        "content": "Tap the export button to save history as JSON, CSV, or PDF. The file is saved to Downloads and a share button appears in the confirmation snackbar."
+      },
+      {
+        "id": "hist-delete",
+        "anchor": "hist-delete",
+        "title": "Deleting Entries",
+        "content": "Swipe left on a history entry to delete it, or tap the delete icon. Use Clear All (with confirmation dialog) to remove the entire history."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "anchor": "constants",
+    "title": "Physical Constants",
+    "category": "Calculator",
+    "icon": "science",
+    "summary": "Reference and insert 90+ physical constants.",
+    "sections": [
+      {
+        "id": "const-browse",
+        "anchor": "const-browse",
+        "title": "Browsing Constants",
+        "content": "The Constants screen lists 90+ physical constants organized by category: Universal, Electromagnetic, Atomic, Thermodynamic, and Gravitational. Scroll or use the category filter chips to browse."
+      },
+      {
+        "id": "const-search",
+        "anchor": "const-search",
+        "title": "Searching Constants",
+        "content": "Type in the search bar to filter constants by name, symbol, or category. Results update instantly as you type."
+      },
+      {
+        "id": "const-insert",
+        "anchor": "const-insert",
+        "title": "Inserting a Constant",
+        "content": "Tap the insert icon (→) next to a constant to return to the Calculator and insert the constant's symbol into the current expression."
+      },
+      {
+        "id": "const-favorite",
+        "anchor": "const-favorite",
+        "title": "Favoriting Constants",
+        "content": "Tap the star icon next to a constant to add it to your Favorites toolbar. Favorited constants appear in the quick-access toolbar on the Calculator screen."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "anchor": "favorites",
+    "title": "Favorites",
+    "category": "Calculator",
+    "icon": "star",
+    "summary": "Manage quick-access shortcuts for functions, constants, and unit conversions.",
+    "sections": [
+      {
+        "id": "fav-overview",
+        "anchor": "fav-overview",
+        "title": "What are Favorites?",
+        "content": "Favorites are shortcuts to frequently used functions, physical constants, and unit conversions. They appear in the quick-access toolbar on the Calculator screen."
+      },
+      {
+        "id": "fav-add",
+        "anchor": "fav-add",
+        "title": "Adding Favorites",
+        "content": "Star any constant from the Constants screen, or star a unit conversion from the Units screen. Functions can be added directly from the Favorites management screen."
+      },
+      {
+        "id": "fav-reorder",
+        "anchor": "fav-reorder",
+        "title": "Reordering Favorites",
+        "content": "On the Favorites screen, drag items by the handle (≡) to reorder them. The new order is saved automatically and reflected in the toolbar."
+      },
+      {
+        "id": "fav-remove",
+        "anchor": "fav-remove",
+        "title": "Removing Favorites",
+        "content": "Tap the remove button (×) next to any favorite on the Favorites screen to delete it from the toolbar."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "anchor": "graphs",
+    "title": "Graphing",
+    "category": "Graphs",
+    "icon": "show_chart",
+    "summary": "Plot 2D and 3D functions with advanced visualization tools.",
+    "sections": [
+      {
+        "id": "graph-add-function",
+        "anchor": "graph-add-function",
+        "title": "Adding a Function",
+        "content": "Tap the + button to add a function. Enter an expression in terms of x (for 2D) or x and y (for 3D surface). Each function is assigned a distinct color automatically."
+      },
+      {
+        "id": "graph-zoom-pan",
+        "anchor": "graph-zoom-pan",
+        "title": "Zoom and Pan",
+        "content": "Pinch to zoom and drag to pan the graph view. Double-tap to reset to the default axis range. The axis bounds update in the controls panel as you interact."
+      },
+      {
+        "id": "graph-trace",
+        "anchor": "graph-trace",
+        "title": "Trace Tool",
+        "content": "Enable the trace tool to move a crosshair along a curve. The x and y coordinates of the traced point display in real time above the graph."
+      },
+      {
+        "id": "graph-integral",
+        "anchor": "graph-integral",
+        "title": "Integral Area Shading",
+        "content": "Toggle the integral area option and set lower and upper bounds. The area under the curve is shaded and the definite integral value is computed and displayed."
+      },
+      {
+        "id": "graph-limit",
+        "anchor": "graph-limit",
+        "title": "Limit Visualization",
+        "content": "Enable limit visualization and enter a target x value. The graph animates the approach from both sides and displays the computed limit value."
+      },
+      {
+        "id": "graph-3d",
+        "anchor": "graph-3d",
+        "title": "3D Surface Graphs",
+        "content": "Switch to 3D mode to plot surfaces of the form z = f(x, y) or parametric surfaces. Adjust mesh density and parameter ranges in the function editor."
+      },
+      {
+        "id": "graph-export",
+        "anchor": "graph-export",
+        "title": "Exporting Graphs",
+        "content": "Tap the export button to capture the graph as an image. Choose to save as PDF or share via the Android share sheet."
+      },
+      {
+        "id": "graph-save",
+        "anchor": "graph-save",
+        "title": "Saving Graph Configurations",
+        "content": "Tap the save button to store the current graph configuration (functions, axis ranges, integral/limit settings) for later recall."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "anchor": "symbolic-math",
+    "title": "Symbolic Math",
+    "category": "Equations",
+    "icon": "functions",
+    "summary": "Compute derivatives, integrals, limits, Taylor series, and simplify expressions.",
+    "sections": [
+      {
+        "id": "sym-derivative",
+        "anchor": "sym-derivative",
+        "title": "Derivatives",
+        "content": "Enter an expression and select the variable of differentiation. Specify the order (1st, 2nd, etc.) and tap Compute to get the symbolic derivative."
+      },
+      {
+        "id": "sym-integral",
+        "anchor": "sym-integral",
+        "title": "Integrals",
+        "content": "Switch between indefinite and definite integral modes. For definite integrals, enter lower and upper bounds. The result includes the antiderivative and, for definite integrals, the numeric value."
+      },
+      {
+        "id": "sym-limit",
+        "anchor": "sym-limit",
+        "title": "Limits",
+        "content": "Enter an expression, select the variable, and enter the target value (including ±∞). The computed limit is displayed symbolically and numerically."
+      },
+      {
+        "id": "sym-taylor",
+        "anchor": "sym-taylor",
+        "title": "Taylor Series",
+        "content": "Generate a Taylor polynomial by specifying the expression, variable, expansion point, and order. The resulting polynomial is displayed term by term."
+      },
+      {
+        "id": "sym-simplify",
+        "anchor": "sym-simplify",
+        "title": "Simplify",
+        "content": "Enter an algebraic expression and tap Simplify to reduce it to its simplest form. Common simplifications include factoring, expanding, and canceling terms."
+      },
+      {
+        "id": "sym-send-to-graph",
+        "anchor": "sym-send-to-graph",
+        "title": "Send to Graph",
+        "content": "Tap the Plot button to send the result expression to the Graphing screen and plot it automatically."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "anchor": "equation-solver",
+    "title": "Equation Solver",
+    "category": "Equations",
+    "icon": "calculate",
+    "summary": "Solve single-variable and multi-variable algebraic equations.",
+    "sections": [
+      {
+        "id": "eq-single",
+        "anchor": "eq-single",
+        "title": "Single-Variable Equations",
+        "content": "Enter an equation in the form f(x) = 0 or f(x) = g(x). Tap Solve to compute all real and complex roots. Results are displayed both symbolically and numerically."
+      },
+      {
+        "id": "eq-system",
+        "anchor": "eq-system",
+        "title": "Systems of Equations",
+        "content": "Switch to System mode to enter multiple equations. Add equations with the + button. The solver finds the solution set for all variables simultaneously."
+      },
+      {
+        "id": "eq-complex-roots",
+        "anchor": "eq-complex-roots",
+        "title": "Complex Roots",
+        "content": "Toggle the complex roots option to include complex solutions in the results. Complex roots are displayed in rectangular (a+bi) and polar (r∠θ) form."
+      },
+      {
+        "id": "eq-send-to-calc",
+        "anchor": "eq-send-to-calc",
+        "title": "Send to Calculator",
+        "content": "Tap Send to Calculator to insert a solution value into the Calculator expression field for further computation."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "anchor": "matrices",
+    "title": "Matrices and Vectors",
+    "category": "Matrices",
+    "icon": "grid_on",
+    "summary": "Full matrix algebra, decompositions, eigenvalues, and vector operations.",
+    "sections": [
+      {
+        "id": "mat-create",
+        "anchor": "mat-create",
+        "title": "Creating a Matrix",
+        "content": "Set the dimensions (rows × columns) and tap each cell to enter values. Matrices are labeled A, B, C, etc. Save a matrix using the save button to recall it later."
+      },
+      {
+        "id": "mat-operations",
+        "anchor": "mat-operations",
+        "title": "Matrix Operations",
+        "content": "Supported operations include addition, subtraction, multiplication, scalar multiplication, transpose, inverse, determinant, trace, and rank. Select two matrices and tap the operation button."
+      },
+      {
+        "id": "mat-decompositions",
+        "anchor": "mat-decompositions",
+        "title": "Decompositions",
+        "content": "Compute LU, QR, and SVD decompositions from the Decomposition menu. The factor matrices are displayed side by side with their labels (L, U, Q, R, Σ, V)."
+      },
+      {
+        "id": "mat-eigenvalues",
+        "anchor": "mat-eigenvalues",
+        "title": "Eigenvalues and Eigenvectors",
+        "content": "Tap the Eigenvalues button to compute eigenvalues and corresponding eigenvectors for a square matrix. Results are listed with their associated eigenvectors."
+      },
+      {
+        "id": "mat-vectors",
+        "anchor": "mat-vectors",
+        "title": "Vector Operations",
+        "content": "Switch to vector mode for dot product, cross product (3D), magnitude, normalization, and angle between vectors. Enter vectors as 1×n or n×1 matrices."
+      },
+      {
+        "id": "mat-save-load",
+        "anchor": "mat-save-load",
+        "title": "Saving and Loading Matrices",
+        "content": "Save the current matrix to a named slot (A–F) using the save button. Load a saved matrix using the load button and selecting the slot name."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "anchor": "units",
+    "title": "Unit Conversion",
+    "category": "Units",
+    "icon": "straighten",
+    "summary": "Convert between 250+ units across all major measurement categories.",
+    "sections": [
+      {
+        "id": "units-convert",
+        "anchor": "units-convert",
+        "title": "Converting Units",
+        "content": "Select a category (Length, Mass, Temperature, etc.), then choose the source and target units. Enter a value in either field for instant bidirectional conversion."
+      },
+      {
+        "id": "units-search",
+        "anchor": "units-search",
+        "title": "Searching Units",
+        "content": "Use the search bar to find units by name or symbol across all categories. Results are filtered in real time."
+      },
+      {
+        "id": "units-si-prefix",
+        "anchor": "units-si-prefix",
+        "title": "SI Prefix Support",
+        "content": "SI prefixes (kilo, mega, giga, milli, micro, nano, etc.) are supported for all SI base units. Select the prefix from the unit picker to apply it automatically."
+      },
+      {
+        "id": "units-insert",
+        "anchor": "units-insert",
+        "title": "Inserting Converted Values",
+        "content": "Tap the Insert button to send the converted value back to the Calculator screen and insert it into the current expression."
+      },
+      {
+        "id": "units-favorite",
+        "anchor": "units-favorite",
+        "title": "Favoriting Conversions",
+        "content": "Tap the star icon to save a unit conversion pair to Favorites for quick access from the Calculator toolbar."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "anchor": "statistics",
+    "title": "Statistics",
+    "category": "Stats",
+    "icon": "bar_chart",
+    "summary": "Descriptive statistics, distributions, hypothesis testing, and regression.",
+    "sections": [
+      {
+        "id": "stats-descriptive",
+        "anchor": "stats-descriptive",
+        "title": "Descriptive Statistics",
+        "content": "Enter data in the table editor and tap Compute to calculate mean, median, mode, standard deviation, variance, quartiles (Q1, Q3), and interquartile range."
+      },
+      {
+        "id": "stats-distributions",
+        "anchor": "stats-distributions",
+        "title": "Probability Distributions",
+        "content": "Select a distribution (Normal, Binomial, Poisson, t, Chi-squared, F, Exponential) and enter its parameters. Evaluate the PDF and CDF at any x value."
+      },
+      {
+        "id": "stats-hypothesis",
+        "anchor": "stats-hypothesis",
+        "title": "Hypothesis Testing",
+        "content": "Choose a test (t-test, z-test, chi-squared test), enter your data and confidence level. The app computes the test statistic, p-value, and displays the conclusion."
+      },
+      {
+        "id": "stats-regression",
+        "anchor": "stats-regression",
+        "title": "Regression Analysis",
+        "content": "Enter paired x/y data and select a regression type (linear, polynomial, exponential, logarithmic, power). The fitted equation, R² value, and residuals are displayed."
+      },
+      {
+        "id": "stats-send-to-graph",
+        "anchor": "stats-send-to-graph",
+        "title": "Plot Regression",
+        "content": "Tap Send to Graph to plot the regression curve overlaid on the scatter plot of your data in the Graphing screen."
+      },
+      {
+        "id": "stats-export",
+        "anchor": "stats-export",
+        "title": "Exporting Data",
+        "content": "Tap the export button to save the dataset and results as CSV or PDF. The file is saved to Downloads and a share option appears in the confirmation snackbar."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "anchor": "settings",
+    "title": "Settings",
+    "category": "Settings",
+    "icon": "settings",
+    "summary": "Customize display format, precision, theme, and input behavior.",
+    "sections": [
+      {
+        "id": "set-display-format",
+        "anchor": "set-display-format",
+        "title": "Display Format",
+        "content": "Choose between Fixed (decimal notation), Scientific (e.g. 1.23×10⁵), Engineering (exponents in multiples of 3), and DMS (degrees/minutes/seconds for angles)."
+      },
+      {
+        "id": "set-decimal-places",
+        "anchor": "set-decimal-places",
+        "title": "Decimal Places",
+        "content": "Set the number of decimal places displayed (0–15). This applies to all numeric results in the Calculator, Units, and Statistics screens."
+      },
+      {
+        "id": "set-digit-separator",
+        "anchor": "set-digit-separator",
+        "title": "Digit Separator",
+        "content": "Choose a thousands separator: None, Comma (1,000,000), Period (1.000.000), or Space (1 000 000). This affects display only, not computation."
+      },
+      {
+        "id": "set-angle-mode",
+        "anchor": "set-angle-mode",
+        "title": "Angle Mode",
+        "content": "Set the default angle unit to Degrees, Radians, or Gradians. This affects all trigonometric functions across the Calculator and Symbolic Math screens."
+      },
+      {
+        "id": "set-rpn-mode",
+        "anchor": "set-rpn-mode",
+        "title": "RPN Mode",
+        "content": "Toggle RPN (Reverse Polish Notation) mode on or off. When enabled, the Calculator switches to stack-based input. See the RPN Mode help article for details."
+      },
+      {
+        "id": "set-haptic",
+        "anchor": "set-haptic",
+        "title": "Haptic Feedback",
+        "content": "Enable or disable vibration feedback on keypad button presses. Uses the device vibration motor for tactile confirmation."
+      },
+      {
+        "id": "set-theme",
+        "anchor": "set-theme",
+        "title": "Theme",
+        "content": "Choose Light, Dark, or System (follows device setting). Theme changes apply immediately without restarting the app."
+      },
+      {
+        "id": "set-precision",
+        "anchor": "set-precision",
+        "title": "Significand Digits",
+        "content": "Set the number of significant digits for high-precision computation (1–100). Higher values increase computation time for complex expressions."
+      },
+      {
+        "id": "set-reset",
+        "anchor": "set-reset",
+        "title": "Reset to Defaults",
+        "content": "Tap Reset to Defaults to restore all settings to their factory values. A confirmation dialog appears before any changes are made."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "anchor": "tips-tricks",
+    "title": "Tips and Tricks",
+    "category": "Overview",
+    "icon": "lightbulb",
+    "summary": "Shortcuts and power-user features to speed up your workflow.",
+    "sections": [
+      {
+        "id": "tip-long-press",
+        "anchor": "tip-long-press",
+        "title": "Long Press for Options",
+        "content": "Long-press any history entry to open a context menu with options to copy the expression, copy the result, or share the calculation."
+      },
+      {
+        "id": "tip-swipe-delete",
+        "anchor": "tip-swipe-delete",
+        "title": "Swipe to Delete",
+        "content": "Swipe left on history entries and favorites to reveal the delete action. This is faster than tapping the delete icon."
+      },
+      {
+        "id": "tip-expression-edit",
+        "anchor": "tip-expression-edit",
+        "title": "Editing Expressions",
+        "content": "Tap inside the expression field to position the cursor. Use the left/right arrow buttons to move the cursor character by character for precise editing."
+      },
+      {
+        "id": "tip-constants-toolbar",
+        "anchor": "tip-constants-toolbar",
+        "title": "Quick Constants Access",
+        "content": "Add frequently used constants to Favorites so they appear in the toolbar on the Calculator screen. Tap a favorite to insert it instantly without leaving the Calculator."
+      },
+      {
+        "id": "tip-graph-regression",
+        "anchor": "tip-graph-regression",
+        "title": "Graph Your Regression",
+        "content": "After computing a regression in the Stats screen, tap Send to Graph to visualize the curve overlaid on your data scatter plot in the Graphing screen."
+      },
+      {
+        "id": "tip-export-share",
+        "anchor": "tip-export-share",
+        "title": "Export and Share",
+        "content": "Use the export button in History, Stats, and Graphs to save results as PDF, CSV, or JSON. Share files directly from the confirmation snackbar."
+      }
+    ]
+  }
+]

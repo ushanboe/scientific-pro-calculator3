@@ -1,0 +1,38 @@
+name: scientific_pro_calculator
+description: "A comprehensive professional-grade scientific calculator app featuring 100-digit high-precision arithmetic, symbolic math and calculus, 2D/3D graphing, matrix and vector operations, statistics, probability distributions, hypothesis testing, regression analysis, unit conversion across 250+ units, and dual Infix/RPN input modes."
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod:
+  sqflite:
+  shared_preferences:
+  fl_chart:
+  vector_math:
+  math_expressions:
+  decimal:
+  pdf:
+  share_plus:
+  path_provider:
+  csv:
+  vibration:
+  google_fonts:
+  intl:
+  rational:
+  complex:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/data/

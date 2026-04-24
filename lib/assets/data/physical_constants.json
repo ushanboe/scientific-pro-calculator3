@@ -1,0 +1,857 @@
+[
+  {
+    "id": 1,
+    "name": "Speed of Light in Vacuum",
+    "symbol": "c",
+    "value": "299792458",
+    "unit": "m/s",
+    "uncertainty": "exact",
+    "category": "Universal"
+  },
+  {
+    "id": 2,
+    "name": "Planck Constant",
+    "symbol": "h",
+    "value": "6.62607015e-34",
+    "unit": "J·s",
+    "uncertainty": "exact",
+    "category": "Universal"
+  },
+  {
+    "id": 3,
+    "name": "Reduced Planck Constant",
+    "symbol": "ℏ",
+    "value": "1.054571817e-34",
+    "unit": "J·s",
+    "uncertainty": "exact",
+    "category": "Universal"
+  },
+  {
+    "id": 4,
+    "name": "Gravitational Constant",
+    "symbol": "G",
+    "value": "6.67430e-11",
+    "unit": "m³/(kg·s²)",
+    "uncertainty": "0.00015e-11",
+    "category": "Universal"
+  },
+  {
+    "id": 5,
+    "name": "Vacuum Permeability",
+    "symbol": "μ₀",
+    "value": "1.25663706212e-6",
+    "unit": "N/A²",
+    "uncertainty": "0.00000000019e-6",
+    "category": "Universal"
+  },
+  {
+    "id": 6,
+    "name": "Vacuum Permittivity",
+    "symbol": "ε₀",
+    "value": "8.8541878128e-12",
+    "unit": "F/m",
+    "uncertainty": "0.0000000013e-12",
+    "category": "Universal"
+  },
+  {
+    "id": 7,
+    "name": "Impedance of Free Space",
+    "symbol": "Z₀",
+    "value": "376.730313668",
+    "unit": "Ω",
+    "uncertainty": "exact",
+    "category": "Universal"
+  },
+  {
+    "id": 8,
+    "name": "Elementary Charge",
+    "symbol": "e",
+    "value": "1.602176634e-19",
+    "unit": "C",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 9,
+    "name": "Magnetic Flux Quantum",
+    "symbol": "Φ₀",
+    "value": "2.067833848e-15",
+    "unit": "Wb",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 10,
+    "name": "Conductance Quantum",
+    "symbol": "G₀",
+    "value": "7.748091729e-5",
+    "unit": "S",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 11,
+    "name": "Josephson Constant",
+    "symbol": "K_J",
+    "value": "483597.8484e9",
+    "unit": "Hz/V",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 12,
+    "name": "von Klitzing Constant",
+    "symbol": "R_K",
+    "value": "25812.80745",
+    "unit": "Ω",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 13,
+    "name": "Bohr Magneton",
+    "symbol": "μ_B",
+    "value": "9.2740100783e-24",
+    "unit": "J/T",
+    "uncertainty": "0.0000000028e-24",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 14,
+    "name": "Nuclear Magneton",
+    "symbol": "μ_N",
+    "value": "5.0507837461e-27",
+    "unit": "J/T",
+    "uncertainty": "0.0000000015e-27",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 15,
+    "name": "Fine-Structure Constant",
+    "symbol": "α",
+    "value": "7.2973525693e-3",
+    "unit": "dimensionless",
+    "uncertainty": "0.0000000011e-3",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 16,
+    "name": "Inverse Fine-Structure Constant",
+    "symbol": "α⁻¹",
+    "value": "137.035999084",
+    "unit": "dimensionless",
+    "uncertainty": "0.000000021",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 17,
+    "name": "Electron Mass",
+    "symbol": "m_e",
+    "value": "9.1093837015e-31",
+    "unit": "kg",
+    "uncertainty": "0.0000000028e-31",
+    "category": "Atomic"
+  },
+  {
+    "id": 18,
+    "name": "Proton Mass",
+    "symbol": "m_p",
+    "value": "1.67262192369e-27",
+    "unit": "kg",
+    "uncertainty": "0.00000000051e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 19,
+    "name": "Neutron Mass",
+    "symbol": "m_n",
+    "value": "1.67492749804e-27",
+    "unit": "kg",
+    "uncertainty": "0.00000000095e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 20,
+    "name": "Muon Mass",
+    "symbol": "m_μ",
+    "value": "1.883531627e-28",
+    "unit": "kg",
+    "uncertainty": "0.000000042e-28",
+    "category": "Atomic"
+  },
+  {
+    "id": 21,
+    "name": "Alpha Particle Mass",
+    "symbol": "m_α",
+    "value": "6.6446573357e-27",
+    "unit": "kg",
+    "uncertainty": "0.0000000020e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 22,
+    "name": "Proton-Electron Mass Ratio",
+    "symbol": "m_p/m_e",
+    "value": "1836.15267343",
+    "unit": "dimensionless",
+    "uncertainty": "0.00000011",
+    "category": "Atomic"
+  },
+  {
+    "id": 23,
+    "name": "Atomic Mass Unit",
+    "symbol": "u",
+    "value": "1.66053906660e-27",
+    "unit": "kg",
+    "uncertainty": "0.00000000050e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 24,
+    "name": "Bohr Radius",
+    "symbol": "a₀",
+    "value": "5.29177210903e-11",
+    "unit": "m",
+    "uncertainty": "0.00000000080e-11",
+    "category": "Atomic"
+  },
+  {
+    "id": 25,
+    "name": "Classical Electron Radius",
+    "symbol": "r_e",
+    "value": "2.8179403262e-15",
+    "unit": "m",
+    "uncertainty": "0.0000000013e-15",
+    "category": "Atomic"
+  },
+  {
+    "id": 26,
+    "name": "Electron Compton Wavelength",
+    "symbol": "λ_C",
+    "value": "2.42631023867e-12",
+    "unit": "m",
+    "uncertainty": "0.00000000073e-12",
+    "category": "Atomic"
+  },
+  {
+    "id": 27,
+    "name": "Rydberg Constant",
+    "symbol": "R_∞",
+    "value": "10973731.568160",
+    "unit": "m⁻¹",
+    "uncertainty": "0.000021",
+    "category": "Atomic"
+  },
+  {
+    "id": 28,
+    "name": "Hartree Energy",
+    "symbol": "E_h",
+    "value": "4.3597447222071e-18",
+    "unit": "J",
+    "uncertainty": "0.0000000000085e-18",
+    "category": "Atomic"
+  },
+  {
+    "id": 29,
+    "name": "Thomson Cross Section",
+    "symbol": "σ_e",
+    "value": "6.6524587321e-29",
+    "unit": "m²",
+    "uncertainty": "0.0000000060e-29",
+    "category": "Atomic"
+  },
+  {
+    "id": 30,
+    "name": "Proton Magnetic Moment",
+    "symbol": "μ_p",
+    "value": "1.41060679736e-26",
+    "unit": "J/T",
+    "uncertainty": "0.00000000060e-26",
+    "category": "Atomic"
+  },
+  {
+    "id": 31,
+    "name": "Electron Magnetic Moment",
+    "symbol": "μ_e",
+    "value": "-9.2847647043e-24",
+    "unit": "J/T",
+    "uncertainty": "0.0000000028e-24",
+    "category": "Atomic"
+  },
+  {
+    "id": 32,
+    "name": "Neutron Magnetic Moment",
+    "symbol": "μ_n",
+    "value": "-9.6623651e-27",
+    "unit": "J/T",
+    "uncertainty": "0.0000023e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 33,
+    "name": "Avogadro Constant",
+    "symbol": "N_A",
+    "value": "6.02214076e23",
+    "unit": "mol⁻¹",
+    "uncertainty": "exact",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 34,
+    "name": "Boltzmann Constant",
+    "symbol": "k_B",
+    "value": "1.380649e-23",
+    "unit": "J/K",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 35,
+    "name": "Molar Gas Constant",
+    "symbol": "R",
+    "value": "8.314462618",
+    "unit": "J/(mol·K)",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 36,
+    "name": "Faraday Constant",
+    "symbol": "F",
+    "value": "96485.33212",
+    "unit": "C/mol",
+    "uncertainty": "exact",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 37,
+    "name": "Stefan-Boltzmann Constant",
+    "symbol": "σ",
+    "value": "5.670374419e-8",
+    "unit": "W/(m²·K⁴)",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 38,
+    "name": "Wien Displacement Law Constant",
+    "symbol": "b",
+    "value": "2.897771955e-3",
+    "unit": "m·K",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 39,
+    "name": "First Radiation Constant",
+    "symbol": "c₁",
+    "value": "3.741771852e-16",
+    "unit": "W·m²",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 40,
+    "name": "Second Radiation Constant",
+    "symbol": "c₂",
+    "value": "1.438776877e-2",
+    "unit": "m·K",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 41,
+    "name": "Molar Planck Constant",
+    "symbol": "N_A·h",
+    "value": "3.990312712e-10",
+    "unit": "J·s/mol",
+    "uncertainty": "exact",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 42,
+    "name": "Molar Mass of Carbon-12",
+    "symbol": "M(¹²C)",
+    "value": "11.9999999958e-3",
+    "unit": "kg/mol",
+    "uncertainty": "0.0000000036e-3",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 43,
+    "name": "Molar Volume of Ideal Gas (STP)",
+    "symbol": "V_m",
+    "value": "22.41396954e-3",
+    "unit": "m³/mol",
+    "uncertainty": "exact",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 44,
+    "name": "Standard Atmosphere",
+    "symbol": "atm",
+    "value": "101325",
+    "unit": "Pa",
+    "uncertainty": "exact",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 45,
+    "name": "Standard Acceleration of Gravity",
+    "symbol": "g_n",
+    "value": "9.80665",
+    "unit": "m/s²",
+    "uncertainty": "exact",
+    "category": "Gravitational"
+  },
+  {
+    "id": 46,
+    "name": "Astronomical Unit",
+    "symbol": "au",
+    "value": "1.495978707e11",
+    "unit": "m",
+    "uncertainty": "exact",
+    "category": "Gravitational"
+  },
+  {
+    "id": 47,
+    "name": "Parsec",
+    "symbol": "pc",
+    "value": "3.085677581491367e16",
+    "unit": "m",
+    "uncertainty": "exact",
+    "category": "Gravitational"
+  },
+  {
+    "id": 48,
+    "name": "Light Year",
+    "symbol": "ly",
+    "value": "9.4607304725808e15",
+    "unit": "m",
+    "uncertainty": "exact",
+    "category": "Gravitational"
+  },
+  {
+    "id": 49,
+    "name": "Solar Mass",
+    "symbol": "M_☉",
+    "value": "1.98892e30",
+    "unit": "kg",
+    "uncertainty": "0.00025e30",
+    "category": "Gravitational"
+  },
+  {
+    "id": 50,
+    "name": "Earth Mass",
+    "symbol": "M_⊕",
+    "value": "5.9722e24",
+    "unit": "kg",
+    "uncertainty": "0.0006e24",
+    "category": "Gravitational"
+  },
+  {
+    "id": 51,
+    "name": "Earth Radius (equatorial)",
+    "symbol": "R_⊕",
+    "value": "6.3781e6",
+    "unit": "m",
+    "uncertainty": "0.0001e6",
+    "category": "Gravitational"
+  },
+  {
+    "id": 52,
+    "name": "Solar Radius",
+    "symbol": "R_☉",
+    "value": "6.957e8",
+    "unit": "m",
+    "uncertainty": "0.001e8",
+    "category": "Gravitational"
+  },
+  {
+    "id": 53,
+    "name": "Solar Luminosity",
+    "symbol": "L_☉",
+    "value": "3.828e26",
+    "unit": "W",
+    "uncertainty": "0.002e26",
+    "category": "Gravitational"
+  },
+  {
+    "id": 54,
+    "name": "Hubble Constant",
+    "symbol": "H₀",
+    "value": "67.4",
+    "unit": "km/(s·Mpc)",
+    "uncertainty": "0.5",
+    "category": "Gravitational"
+  },
+  {
+    "id": 55,
+    "name": "Proton-Neutron Mass Difference",
+    "symbol": "m_n - m_p",
+    "value": "2.30557435e-30",
+    "unit": "kg",
+    "uncertainty": "0.00000082e-30",
+    "category": "Atomic"
+  },
+  {
+    "id": 56,
+    "name": "Electron Volt",
+    "symbol": "eV",
+    "value": "1.602176634e-19",
+    "unit": "J",
+    "uncertainty": "exact",
+    "category": "Atomic"
+  },
+  {
+    "id": 57,
+    "name": "Atomic Unit of Energy",
+    "symbol": "E_h",
+    "value": "4.3597447222071e-18",
+    "unit": "J",
+    "uncertainty": "0.0000000000085e-18",
+    "category": "Atomic"
+  },
+  {
+    "id": 58,
+    "name": "Quantum of Circulation",
+    "symbol": "h/(2m_e)",
+    "value": "3.6369475516e-4",
+    "unit": "m²/s",
+    "uncertainty": "0.0000000011e-4",
+    "category": "Atomic"
+  },
+  {
+    "id": 59,
+    "name": "Proton Gyromagnetic Ratio",
+    "symbol": "γ_p",
+    "value": "2.6752218744e8",
+    "unit": "rad/(s·T)",
+    "uncertainty": "0.0000000011e8",
+    "category": "Atomic"
+  },
+  {
+    "id": 60,
+    "name": "Electron Gyromagnetic Ratio",
+    "symbol": "γ_e",
+    "value": "1.76085963023e11",
+    "unit": "rad/(s·T)",
+    "uncertainty": "0.00000000053e11",
+    "category": "Atomic"
+  },
+  {
+    "id": 61,
+    "name": "Deuteron Mass",
+    "symbol": "m_d",
+    "value": "3.3435837724e-27",
+    "unit": "kg",
+    "uncertainty": "0.0000000010e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 62,
+    "name": "Helion Mass",
+    "symbol": "m_h",
+    "value": "5.0064127796e-27",
+    "unit": "kg",
+    "uncertainty": "0.0000000015e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 63,
+    "name": "Triton Mass",
+    "symbol": "m_t",
+    "value": "5.0073567446e-27",
+    "unit": "kg",
+    "uncertainty": "0.0000000015e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 64,
+    "name": "Tau Mass",
+    "symbol": "m_τ",
+    "value": "3.16754e-27",
+    "unit": "kg",
+    "uncertainty": "0.00021e-27",
+    "category": "Atomic"
+  },
+  {
+    "id": 65,
+    "name": "W Boson Mass",
+    "symbol": "m_W",
+    "value": "1.43389e-25",
+    "unit": "kg",
+    "uncertainty": "0.00019e-25",
+    "category": "Atomic"
+  },
+  {
+    "id": 66,
+    "name": "Z Boson Mass",
+    "symbol": "m_Z",
+    "value": "1.62522e-25",
+    "unit": "kg",
+    "uncertainty": "0.00002e-25",
+    "category": "Atomic"
+  },
+  {
+    "id": 67,
+    "name": "Higgs Boson Mass",
+    "symbol": "m_H",
+    "value": "2.2369e-25",
+    "unit": "kg",
+    "uncertainty": "0.0005e-25",
+    "category": "Atomic"
+  },
+  {
+    "id": 68,
+    "name": "Weak Mixing Angle",
+    "symbol": "sin²θ_W",
+    "value": "0.23122",
+    "unit": "dimensionless",
+    "uncertainty": "0.00003",
+    "category": "Atomic"
+  },
+  {
+    "id": 69,
+    "name": "Strong Coupling Constant",
+    "symbol": "α_s",
+    "value": "0.1179",
+    "unit": "dimensionless",
+    "uncertainty": "0.0010",
+    "category": "Atomic"
+  },
+  {
+    "id": 70,
+    "name": "Fermi Coupling Constant",
+    "symbol": "G_F/(ℏc)³",
+    "value": "1.1663787e-5",
+    "unit": "GeV⁻²",
+    "uncertainty": "0.0000006e-5",
+    "category": "Atomic"
+  },
+  {
+    "id": 71,
+    "name": "Molar Volume of Silicon",
+    "symbol": "V_m(Si)",
+    "value": "1.205883199e-5",
+    "unit": "m³/mol",
+    "uncertainty": "0.000000060e-5",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 72,
+    "name": "Lattice Parameter of Silicon",
+    "symbol": "a(Si)",
+    "value": "5.431020511e-10",
+    "unit": "m",
+    "uncertainty": "0.000000089e-10",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 73,
+    "name": "Copper X-unit",
+    "symbol": "xu(CuKα₁)",
+    "value": "1.00207697e-13",
+    "unit": "m",
+    "uncertainty": "0.00000028e-13",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 74,
+    "name": "Molybdenum X-unit",
+    "symbol": "xu(MoKα₁)",
+    "value": "1.00209952e-13",
+    "unit": "m",
+    "uncertainty": "0.00000053e-13",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 75,
+    "name": "Angstrom Star",
+    "symbol": "Å*",
+    "value": "1.00001495e-10",
+    "unit": "m",
+    "uncertainty": "0.00000090e-10",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 76,
+    "name": "Loschmidt Constant (273.15 K, 101.325 kPa)",
+    "symbol": "n₀",
+    "value": "2.686780111e25",
+    "unit": "m⁻³",
+    "uncertainty": "exact",
+    "category": "Physicochemical"
+  },
+  {
+    "id": 77,
+    "name": "Sackur-Tetrode Constant (1 K, 100 kPa)",
+    "symbol": "S₀/R",
+    "value": "-1.15170753706",
+    "unit": "dimensionless",
+    "uncertainty": "0.00000000045",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 78,
+    "name": "Second Virial Coefficient of Helium-4",
+    "symbol": "B(He-4)",
+    "value": "11.8e-6",
+    "unit": "m³/mol",
+    "uncertainty": "0.2e-6",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 79,
+    "name": "Triple Point of Water",
+    "symbol": "T_tp",
+    "value": "273.16",
+    "unit": "K",
+    "uncertainty": "exact",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 80,
+    "name": "Molar Enthalpy of Fusion of Water",
+    "symbol": "ΔH_fus",
+    "value": "6009",
+    "unit": "J/mol",
+    "uncertainty": "1",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 81,
+    "name": "Molar Enthalpy of Vaporization of Water",
+    "symbol": "ΔH_vap",
+    "value": "40650",
+    "unit": "J/mol",
+    "uncertainty": "20",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 82,
+    "name": "Specific Heat Capacity of Water (25°C)",
+    "symbol": "c_p(H₂O)",
+    "value": "4181.8",
+    "unit": "J/(kg·K)",
+    "uncertainty": "0.1",
+    "category": "Thermodynamic"
+  },
+  {
+    "id": 83,
+    "name": "Magnetic Constant",
+    "symbol": "μ₀/4π",
+    "value": "1e-7",
+    "unit": "N/A²",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 84,
+    "name": "Characteristic Impedance of Vacuum",
+    "symbol": "Z₀/2",
+    "value": "188.365156734",
+    "unit": "Ω",
+    "uncertainty": "exact",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 85,
+    "name": "Electron Charge-to-Mass Ratio",
+    "symbol": "-e/m_e",
+    "value": "-1.75882001076e11",
+    "unit": "C/kg",
+    "uncertainty": "0.00000000053e11",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 86,
+    "name": "Proton Charge-to-Mass Ratio",
+    "symbol": "e/m_p",
+    "value": "9.5788331560e7",
+    "unit": "C/kg",
+    "uncertainty": "0.0000000029e7",
+    "category": "Electromagnetic"
+  },
+  {
+    "id": 87,
+    "name": "Compton Wavelength",
+    "symbol": "λ_C",
+    "value": "2.42631023867e-12",
+    "unit": "m",
+    "uncertainty": "0.00000000073e-12",
+    "category": "Atomic"
+  },
+  {
+    "id": 88,
+    "name": "Proton Compton Wavelength",
+    "symbol": "λ_Cp",
+    "value": "1.32140985539e-15",
+    "unit": "m",
+    "uncertainty": "0.00000000040e-15",
+    "category": "Atomic"
+  },
+  {
+    "id": 89,
+    "name": "Neutron Compton Wavelength",
+    "symbol": "λ_Cn",
+    "value": "1.31959090581e-15",
+    "unit": "m",
+    "uncertainty": "0.00000000075e-15",
+    "category": "Atomic"
+  },
+  {
+    "id": 90,
+    "name": "Planck Mass",
+    "symbol": "m_P",
+    "value": "2.17643424e-8",
+    "unit": "kg",
+    "uncertainty": "0.00000024e-8",
+    "category": "Universal"
+  },
+  {
+    "id": 91,
+    "name": "Planck Length",
+    "symbol": "l_P",
+    "value": "1.616255e-35",
+    "unit": "m",
+    "uncertainty": "0.000018e-35",
+    "category": "Universal"
+  },
+  {
+    "id": 92,
+    "name": "Planck Time",
+    "symbol": "t_P",
+    "value": "5.391247e-44",
+    "unit": "s",
+    "uncertainty": "0.000060e-44",
+    "category": "Universal"
+  },
+  {
+    "id": 93,
+    "name": "Planck Temperature",
+    "symbol": "T_P",
+    "value": "1.416784e32",
+    "unit": "K",
+    "uncertainty": "0.000016e32",
+    "category": "Universal"
+  },
+  {
+    "id": 94,
+    "name": "Planck Charge",
+    "symbol": "q_P",
+    "value": "1.87554603778e-18",
+    "unit": "C",
+    "uncertainty": "0.00000000014e-18",
+    "category": "Universal"
+  },
+  {
+    "id": 95,
+    "name": "Cosmological Constant",
+    "symbol": "Λ",
+    "value": "1.089e-52",
+    "unit": "m⁻²",
+    "uncertainty": "0.029e-52",
+    "category": "Gravitational"
+  }
+]
