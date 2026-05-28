@@ -1,0 +1,27 @@
+{
+  "slug": "scientific-pro-calculator3",
+  "name": "Scientific Pro Calculator",
+  "tagline": "Full-featured scientific calculator for Android \u2014 symbolic computation, matrices, statistics, complex numbers, 90+ constants. Built end-to-end by Tateru Pro from a single AI Spec Chat paragraph (52 files, 6.1M tokens, ~2hr autonomous build).",
+  "tateru_built": true,
+  "tateru_version": null,
+  "build_date": "2026-04-24",
+  "platforms": [
+    "android"
+  ],
+  "tech_stack": [
+    "flutter",
+    "sqflite",
+    "flutter_riverpod",
+    "fl_chart",
+    "math_expressions"
+  ],
+  "features": null,
+  "on_device_ai": false,
+  "store_url": null,
+  "screenshots_dir": null,
+  "build_notes_files": [],
+  "blog_eligible": true,
+  "blog_notes": "Tateru-built scientific calculator (3rd iteration) \u2014 most polished of the calc series.",
+  "is_private_repo": false,
+  "github_created_at": "2026-04-24"
+}
